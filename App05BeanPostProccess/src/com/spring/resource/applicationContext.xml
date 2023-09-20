@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="account" class="com.spring.beans.Account">
+        		<property name="accNo" value="3414rewf4"/>
+        		<!-- <property name="accType" value="cuurent"/> -->
+        		<property name="bal" value="2451254.00"/>
+        		<property name="accHolderName" value="Laukesh Kumar" />
+        		<property name="accHolderMobileNumber" value="8709463939"/>
+        		<property name="accHolderEmail" value="laukeshk185"/>
+        </bean>
+        <bean id="accPostProcessor" class="com.spring.processor.AccountPostProcessor"/>
+</beans>

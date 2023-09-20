@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="course" class="com.spring.beans.Course" c:cName="Java"
+		c:cCost="10000" />
+	<bean id="student" class="com.spring.beans.Student"
+		c:sName="Laukesh Kumar" c:sRoll="07" c:course-ref="course" />
+<!-- 	with the index value -->
+	<bean id="course1" class="com.spring.beans.Course" c:_0="Java"
+		c:_1="10000" />
+	<bean id="student1" class="com.spring.beans.Student"
+		c:_0="Laukesh Kumar" c:_1="07" c:_2-ref="course" />
+
+</beans>
+        

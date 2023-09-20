@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="addresssBean" class="com.spring.beans.Address">
+		<property name="homeNo" value="g53"/>
+		<property name="area" value="Rafiganj"/>
+		<property name="city" value="Aurangabad"/>
+		<property name="state" value="Bihar"/>
+		<property name="country" value="Bharat"/>
+	</bean>
+	<bean id="studentBean" class="com.spring.beans.Student">
+		<property name="sid" value="L-237"/>
+		<property name="sname" value="Laukesh Kumar"/>
+		<property name="sadd" ref="addresssBean" />
+		<property name="quali">
+			<list>
+				<value>BSC.IT</value>
+				<value>MCA</value>
+			</list>
+		</property>
+		<property name="course_and_teacher">
+			<map>
+				<entry key="C" value="Balaiya"/>
+				<entry key="C++" value="Nagarjuna"/>
+				<entry key="JAVA" value="Durga" />
+			</map>
+		</property>
+	</bean>
+	
+
+
+</beans>

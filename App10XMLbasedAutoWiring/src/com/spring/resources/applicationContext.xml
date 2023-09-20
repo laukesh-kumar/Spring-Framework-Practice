@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="account" class="com.spring.beans.Account">
+		<property name="accNo" value="52352365244"/>
+		<property name="accHolderName" value="Laukesh Kumar"/>	
+	</bean>
+	<bean id="address" class="com.spring.beans.Address">
+		<property name="home" value="Jainbigha"/>
+		<property name="city" value="Aurangabad"/>	
+	</bean>
+	 <bean id="currentAddress" class="com.spring.beans.Address">
+		<property name="home" value="Ameerpeet"/>
+		<property name="city" value="Hyderabad"/>	
+	</bean> 
+	<bean id="student" class="com.spring.beans.Student" autowire="byName">
+		<property name="sid" value="L-07"/>
+		<property name="sName" value="Laukesh"/>	
+	</bean>
+</beans>
